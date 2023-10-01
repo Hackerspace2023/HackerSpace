@@ -1,0 +1,292 @@
+/* ====================== page two ====================== */
+
+.page.two{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: fit-content;
+    /* padding-bottom: 80px; */
+    padding-top: 80px;
+    padding-right: 50px;
+    
+}
+/* ========= left section ========= */
+
+.page.two .left{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+}
+.page.two .left h1{
+    color: var(--orange);
+    font-size: 60px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.page.two .left h2{
+    color: var(--gray);
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.page.two .left h3{
+    color: var(--gray);
+    opacity: 0.5;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.page.two .left .button-section{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ========= right section ========= */
+
+.page.two .right{
+   width: 50%;
+   height: 450px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; 
+   position: relative;
+
+}
+.page.two .right .circle{
+    position: absolute;
+    top: 0;
+    left: calc((100% - 330px)/2);
+    height: 450px;
+}
+.page.two .right .circle-icons-section{
+    position: relative;
+    height: 100%;
+    width: 450px;
+}
+.page.two .right .circle-icons{
+    position: absolute;
+    top: 180px;
+    left: 240px;
+    height: 80px;
+    width: 80px;
+}
+.page.two .right .circle-icons.center-icon{
+    transform: scale(3.9);
+    border-radius: 50%;
+}
+.page.two .right .circle-icons:nth-child(1)
+{
+    animation: circle-animation1 100s infinite linear;
+}
+.page.two .right .circle-icons:nth-child(2)
+{
+    animation: circle-animation2 100s infinite linear;
+}
+.page.two .right .circle-icons:nth-child(3)
+{
+    animation: circle-animation3 100s infinite linear;
+}
+.page.two .right .circle-icons:nth-child(4)
+{
+    animation: circle-animation4 100s infinite linear;
+}
+.page.two .right .circle-icons:nth-child(5)
+{
+    animation: circle-animation5 100s infinite linear;
+}
+.page.two .right .circle-icons:nth-child(6)
+{
+    animation: circle-animation6 100s infinite linear;
+}
+/* ========= circle icon animastions ========= */
+
+@keyframes circle-animation1 {
+    0% {
+        transform: rotate(0deg) 
+            translateX(225px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+            translateX(225px) rotate(-360deg);
+    }
+}
+@keyframes circle-animation2 {
+    0% {
+        transform: rotate(0deg) 
+            translateY(-200px) translateX(110px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+            translateY(-200px) translateX(110px) rotate(-360deg);
+    }
+}
+@keyframes circle-animation3 {
+    0% {
+        transform: rotate(0deg) 
+        translateX(110px) translateY(200px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+        translateX(110px) translateY(200px) rotate(-360deg);
+    }
+}
+@keyframes circle-animation4 {
+    0% {
+        transform: rotate(0deg) 
+        translateY(200px) translateX(-110px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+        translateY(200px) translateX(-110px) rotate(-360deg);
+    }
+}
+@keyframes circle-animation5 {
+    0% {
+        transform: rotate(0deg) 
+        translateY(-200px) translateX(-110px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+        translateY(-200px) translateX(-110px) rotate(-360deg);
+    }
+}
+@keyframes circle-animation6 {
+    0% {
+        transform: rotate(0deg) 
+        translateX(-225px) rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg) 
+        translateX(-225px) rotate(-360deg);
+    }
+}
+
+
+
+/* ====================== page two responsive ====================== */
+@media only screen and (max-width: 1222px){
+    .page.two .left{
+        width: 50%;
+    }
+    .page.two .left h1{
+        font-size: 45px;
+    }
+    .page.two .left h2{
+        font-size: 35px;
+    }
+    .page.two .left h3{
+        font-size: 25px;
+    }
+    .page.two .right{
+        transform: scale(0.7);
+    }
+}
+@media only screen and (max-width: 962px){
+    .page.two .left{
+        width: 50%;
+    }
+    .page.two .left h1{
+        font-size: 40px;
+    }
+    .page.two .left h2{
+        font-size: 30px;
+    }
+    .page.two .left h3{
+        font-size: 20px;
+    }
+    .page.two .right{
+        transform: scale(0.6);
+    }
+}
+@media only screen and (max-width: 760px)
+{
+    .page.two{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .page.two .left{
+        width: 100%;
+        align-items: center;
+    }
+    .page.two .left h1{
+        font-size: 60px;
+        text-align: center;
+    }
+    .page.two .left h2{
+        font-size: 50px;
+    }
+    .page.two .left h3{
+        font-size: 30px;
+    }
+    .page.two .right{
+        transform: scale(0.8) translateX(-50px);
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .page.two .left h1{
+        font-size: 50px;
+    }
+    .page.two .left h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .page.two .left h3{
+        font-size: 25px;
+    }
+    .page.two .right{
+        transform: scale(0.5) translateX(-50px);
+    }
+}
+@media only screen and (max-width: 400px){
+    .page.two .left h1{
+        font-size: 35px;
+    }
+    .page.two .left h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    .page.two .left h3{
+        font-size: 18px;
+    }
+    /* .page.two .right{
+        transform: scale(0.5) translateX(-50px);
+    } */
+    .page.two .button-section{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px){
+    .page.two{
+        gap: 0px;
+    }
+    .page.two .left h1{
+        font-size: 30px;
+    }
+    .page.two .left h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .page.two .left h3{
+        font-size: 15px;
+    }
+    .page.two .right{
+        transform: scale(0.4) translateX(-50px);
+    }
+}

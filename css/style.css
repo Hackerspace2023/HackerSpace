@@ -1,0 +1,65 @@
+/* ====================== google fonts ====================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ====================== global declaration section ====================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --orange: #E75F00;
+    --white: #FFFFFF;
+    --light-gray: #D7D7D7;
+    --gray: #A6A6A4;
+    --black: #000000;
+}
+
+/* ====================== body and main css ====================== */
+
+
+body{
+    background-color: var(--black);
+}
+main{
+    background-color: var(--black);
+    position: relative;
+}
+
+/* ====================== button css ====================== */
+
+
+.button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--white);
+    transition: all 0.1s linear;
+    
+}
+.button:hover{
+    background-color: transparent;
+}
+
+/* ====================== page css ====================== */
+
+
+.page{
+    height: 100vh;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

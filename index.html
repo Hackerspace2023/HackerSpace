@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.bio.link/uploads/profile_pictures/2023-07-21/UD5Se2WFI2evC3Wd2mgjlfJjeuJ5ePrL.png"
+      type="image/x-icon"
+    />
+    <title>Hackerspace</title>
+    <!-- Css Links -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/page-one.css" />
+    <link rel="stylesheet" href="./css/page-two.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/image-gallery.css" />
+    <link rel="stylesheet" href="./css/members-gallery.css" />
+    <!-- CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- data aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <main>
+      <!-- navbar section -->
+
+      <div class="nav-buttons">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-close"></i>
+        <div class="navTitle">
+          <img src="./public/hackerspace.jpg" alt="">
+        </div>
+      </div>
+      <nav class="nav">
+        <div class="nav-items">
+          <a href="#home">Home</a>
+          <a href="#">Products</a>
+          <a href="#">Solution</a>
+          <a href="#">Company</a>
+        </div>
+        <div class="user-button">
+          <a href="https://hackerspace.bio.link" target="_blank">
+            <button class="button">Join Now</button>
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a
+            href="https://www.instagram.com/_hackerspace_msit_/"
+            target="_blank"
+          >
+            <img src="./public/instagram.png" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100091680046825"
+            target="_blank"
+          >
+            <img src="./public/facebook.png" alt=""
+          /></a>
+          <a href="https://github.com/Hackerspace2023" target="_blank">
+            <img src="./public/github.png" alt=""
+          /></a>
+        </div>
+      </nav>
+      <!-- home page -->
+
+      <div class="page" id="home">
+        <div class="page-content">
+          <div class="left" data-aos="fade-right">
+            <h2>Welcome To</h2>
+            <h1>hackerspace</h1>
+            <h3>Coding Community of MSIT</h3>
+          </div>
+          <div class="right" data-aos="fade-in">
+            <p>
+              Dive into the realm where lines of code weave dreams into reality
+              and innovation knows no bounds. Welcome to Hackerspace, your
+              launchpad to explore, create, and collaborate in the world of
+              coding like never before.
+            </p>
+            <div class="search">
+              <label for="search-input">
+                <i class="fa-solid fa-search"></i
+              ></label>
+              <input
+                type="text"
+                id="search-input"
+                name="search"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        </div>
+        <img src="./public/background.png" alt="" class="background" />
+      </div>
+      <!-- image gallery -->
+      <div class="page photo-gallery-page">
+        <div class="members-gallery">
+          <div class="top" data-aos="fade-up">
+            <h1>Our <b>Members</b></h1>
+            <div class="members-gallery-button-section">
+              <i
+                id="members-gallery-right-scrolls"
+                class="fa-solid fa-less-than"
+              ></i>
+              <i
+                id="members-gallery-left-scrolls"
+                class="fa-solid fa-greater-than"
+              ></i>
+            </div>
+          </div>
+          <ul class="members-gallery-item snaps-inline" data-aos="fade-up">
+            
+            <li>
+              <img src="./public/profile1.jpg" alt="${item.artist.name}" />
+            </li>
+            <li>
+              <img src="./public/profile5.jpg" alt="${item.artist.name}" />
+            </li>
+            <li>
+              <img src="./public/profile3.jpg" alt="${item.artist.name}" />
+            </li>
+            <li>
+              <img src="./public/profile4.jpg" alt="${item.artist.name}" />
+            </li>
+            <li>
+              <img src="./public/profile2.jpg" alt="${item.artist.name}" />
+            </li>
+            
+            
+            
+            <li>
+              <img src="./public/profile6.jpg" alt="${item.artist.name}" />
+            </li>
+            <li>
+              <img src="./public/profile7.jpg" alt="${item.artist.name}" />
+            </li>
+            <li>
+              <img src="./public/profile8.jpg" alt="${item.artist.name}" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- page two -->
+
+      <div class="page two">
+        <div class="left" data-aos="fade-right">
+          <h1>web development</h1>
+          <h2>is no more difficult</h2>
+          <h3>become zero to hero</h3>
+          <div class="button-section">
+            <a
+              href="https://www.instagram.com/_hackerspace_msit_/"
+              target="_blank"
+            >
+              <button class="button">Contact us</button></a
+            >
+            <a href="https://hackerspace.bio.link" target="_blank">
+              <button class="button">Learn More</button></a
+            >
+          </div>
+        </div>
+        <div class="right">
+          <img src="./public/circle.svg" alt="circle" class="circle" />
+          <div class="circle-icons-section">
+            <img src="./public/html.png" alt="html" class="circle-icons" />
+            <img src="./public/css.png" alt="html" class="circle-icons" />
+            <img src="./public/js.png" alt="html" class="circle-icons" />
+            <img src="./public/react.png" alt="html" class="circle-icons" />
+            <img
+              src="./public/typescript.png"
+              alt="html"
+              class="circle-icons"
+            />
+            <img src="./public/nodejs.png" alt="html" class="circle-icons" />
+            <img
+              src="./public/hackerspace.jpg"
+              alt=""
+              class="circle-icons center-icon"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- photo gallary page -->
+      <div class="page photo-gallery-page">
+        <div class="photo-gallery">
+          <div class="top" data-aos="fade-up">
+            <h1>Photo <b>Gallery</b></h1>
+            <div class="photo-gallery-button-section">
+              <i
+                id="photo-gallery-right-scrolls"
+                class="fa-solid fa-less-than"
+              ></i>
+              <h1>Photo <b>Gallery</b></h1>
+              <i
+                id="photo-gallery-left-scrolls"
+                class="fa-solid fa-greater-than"
+              ></i>
+            </div>
+          </div>
+          <div class="photo-gallery-item snaps-inline" data-aos="fade-up">
+            
+          </div>
+        </div>
+      </div>
+      <!-- footer section -->
+
+      <footer class="footer" data-aos="fade-in">
+        <h1>Code by <b>Deep Das</b></h1>
+        <div class="footer-links">
+          <a href="https://github.com/youtanimstar" target="_blank">
+            <i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/deep_arts_10/" target="_blank">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/deep-das-09b983248/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p>
+          Get the Full Source Code
+          <a href="https://github.com/youtanimstar/hackerspace" target="_blank"
+            >here</a
+          >
+        </p>
+      </footer>
+    </main>
+    <!-- script section -->
+    <script src="./js/navabar.js"></script>
+    <script src="./js/photo-gallery.js"></script>
+    <!-- data aos section -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>

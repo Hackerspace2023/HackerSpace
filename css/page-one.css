@@ -1,0 +1,300 @@
+/* ====================== page one ====================== */
+
+.page{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+}
+#home{
+    height: fit-content;
+}
+.page .background{
+    width: 100%;
+    z-index: 0;
+}
+/* ====================== Page Content ====================== */
+.page .page-content{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ========= left section ========= */
+
+.page .page-content .left{
+    width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column; 
+}
+.page .page-content .left h1{
+    color: var(--orange);
+    font-size: 72px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.page .page-content .left h2{
+    color: var(--white);
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.page .page-content .left h3{
+    color: var(--gray);
+    opacity: 0.8;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+/* ========= Right section ========= */
+
+.page .page-content .right{
+    width: 45%;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+   flex-direction: column;
+   gap: 20px;
+}
+.page .page-content .right p{
+    color: var(--gray);
+    font-size: 22px;
+}
+.page .page-content .right .search{
+    background-color: #313130;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+.page .page-content .right .search i{
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.page .page-content .right .search i:hover{
+    background-color: var(--light-gray);
+    color: var(--black);
+}
+.page .page-content .right .search input{
+    font-size: 18px;
+    outline: none;
+    background-color: #313130;
+    border: none;
+    color: var(--white);
+}
+
+.page .page-content .right .search input::placeholder {
+    color: var(--gray);
+    opacity: 1;
+  }
+  
+  .page .page-content .right .search input:-ms-input-placeholder {
+    color: var(--gray);
+  }
+  
+  .page .page-content .right .search input::-ms-input-placeholder {
+    color: var(--gray);
+  }
+
+
+/* ====================== page one responsive ====================== */
+@media only screen and (max-width: 1300px)
+{
+    .page{
+        overflow: hidden;
+    }
+    .page .background{
+        width: 1300px;
+        z-index: 0;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 1222px)
+{
+    .page .background{
+        width: 1222px;
+    }
+    .page .page-content .left h1
+    {
+        font-size: 60px;
+    }
+    .page .page-content .left h2
+    {
+        font-size: 40px;
+    }
+    .page .page-content .left h3
+    {
+        font-size: 30px;
+    }
+    .page .page-content .right p{
+        font-size: 17px;
+    }
+    .page .page-content .right .search{
+        padding: 5px;
+        padding-left: 10px;
+    }
+    .page .page-content .right .search i{
+        font-size: 15px;
+        
+    }
+    .page .page-content .right .search input{
+        font-size: 15px;
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 923px)
+{
+    .page .page-content{
+        z-index: 2;
+    }
+    .page .page-content .left h1
+    {
+        font-size: 50px;
+    }
+    .page .page-content .left h2
+    {
+        font-size: 32px;
+    }
+    .page .page-content .left h3
+    {
+        font-size: 25px;
+    }
+    .page .page-content .right p{
+        font-size: 15px;
+    }
+    .page .background{
+        width: 1050px;
+    }
+
+}
+@media only screen and (max-width: 760px)
+{
+    .page{
+        padding-top: 50px;
+    }
+    .page .background{
+        display: none;
+    }
+    .page .page-content{
+
+        position: relative;
+        top: 0;
+        left: 0;
+        height: inherit;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .page .page-content .left{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .page .page-content .left h1{
+        font-size: 70px;
+    }
+    .page .page-content .left h2{
+        font-size: 50px;
+    }
+    .page .page-content .left h3{
+        font-size: 30px;
+    }
+    .page .page-content .right{
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+    .page .page-content .right p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .page .page-content .right .search {
+        padding: 10px;
+        padding-left: 0px;
+    }
+    .page .page-content .right .search i{
+        font-size: 20px;
+    }
+    .page .page-content .right .search input{
+        font-size: 20px;
+        width: 80%;
+    }
+
+}
+@media only screen and (max-width: 540px)
+{
+    .page .page-content .left h1{
+        font-size: 55px;
+    }
+    .page .page-content .left h2{
+        font-size: 40px;
+    }
+    .page .page-content .left h3{
+        font-size: 25px;
+    }
+    .page .page-content .right p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 450px)
+{
+    .page .page-content .left h1{
+        font-size: 45px;
+    }
+    .page .page-content .left h2{
+        font-size: 30px;
+    }
+    .page .page-content .left h3{
+        font-size: 20px;
+    }
+    .page .page-content .right p{
+        font-size: 15px;
+    }
+    .page .page-content .right .search{
+        padding: 5px;
+    }
+    .page .page-content .right .search i{
+        font-size: 15px;
+    }
+    .page .page-content .right .search input{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 360px)
+{
+    .page .page-content .left h1{
+        font-size: 35px;
+    }
+    .page .page-content .left h2{
+        font-size: 25px;
+    }
+    .page .page-content .left h3{
+        font-size: 16px;
+    }
+    .page .page-content .right p{
+        font-size: 12px;
+    }
+    .page .page-content .right .search{
+        padding: 1px;
+    }
+    .page .page-content .right .search i{
+        font-size: 12px;
+    }
+    .page .page-content .right .search input{
+        font-size: 12px;
+    }
+}

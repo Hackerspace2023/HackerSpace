@@ -1,0 +1,131 @@
+/* ====================== image gallery section ====================== */
+ .members-gallery{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+ .members-gallery .top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 20px;
+    
+}
+
+ .members-gallery .top h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--light-gray);
+    text-align: center;
+}
+.members-gallery .top h1 b{
+    color: var(--orange);
+}
+ .members-gallery .top .members-gallery-button-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+
+}
+ .members-gallery .top .members-gallery-button-section i{
+    color: var(--gray);
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    transition: all 0.1s ease;
+}
+ .members-gallery .top .members-gallery-button-section i:hover{
+    background-color: var(--orange);
+    color: var(--black);
+
+}
+
+ .members-gallery .members-gallery-item{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    scroll-behavior: smooth;
+    gap: 50px;
+}
+.members-gallery .members-gallery-item li{
+    list-style-type: none;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.members-gallery .members-gallery-item li:hover{
+    transform: scale(1.05);
+}
+ .members-gallery .members-gallery-item::-webkit-scrollbar{
+    display: none;
+}
+ .members-gallery .members-gallery-item li img{
+    height: 300px;
+}
+
+@media only screen and (max-width: 748px){
+    .members-gallery .members-gallery-item{
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+
+}
+
+
+  @media only screen and (max-width: 600px)
+  {
+     .members-gallery .members-gallery-item img{
+        width: 100%;
+    }
+     .members-gallery .top .members-gallery-button-section{
+        display: none;
+    }
+     .members-gallery .top{
+        justify-content: center;
+    }
+
+  }
+
+@media only screen and (max-width: 450px)
+{
+     .members-gallery .top h1{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 356px)
+{
+     .members-gallery .top h1{
+        font-size: 25px;
+    }
+}
+

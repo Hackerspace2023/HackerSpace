@@ -1,0 +1,157 @@
+/* ====================== navbar section ====================== */
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000a8;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    z-index: 5;
+}
+/* ========= nav items ========= */
+
+.nav-items{
+    background-color: #a6a6a44b;
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.nav-items a{
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.1s linear;
+}
+.nav-items a:hover{
+    color: var(--black);
+    background-color: var(--light-gray);
+}
+
+.user-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* ========= nav links ========= */
+.nav-links{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.nav-links img{
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.nav-links img:hover{
+    transform: scale(1.1);
+}
+
+/* ========= nav-buttons ========= */
+.nav-buttons{
+    position: sticky;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    height: fit-content;
+    width: 100%;
+    text-align: right;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    z-index: 10;
+    display: none;
+}
+.fa-solid{
+    color: white;
+    font-size: 30px;
+
+}
+.fa-solid.fa-close{
+    display: none;
+}
+
+/* ====================== nav title responsive ====================== */
+.navTitle{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    color: var(--orange);
+}
+.navTitle img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.navTitle.active{
+    display: none;
+}
+
+
+
+/* ====================== navbar responsive ====================== */
+
+@media only screen and (max-width: 860px)
+{   
+    nav{
+        position: fixed;
+        top: 0;
+        left: -900px;
+        height: 100vh;
+        background-color: var(--black);
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        gap: 30px;
+        padding-left: 0px;
+    padding-right: 0px;
+    }
+    .nav-items{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: transparent;
+    }
+    .nav-items a{
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
+    .nav-buttons{
+        display: block;
+    }
+    .nav .button{
+        font-size: 20px;
+    }
+    .nav-links{
+        gap: 30px;
+    }
+    .nav-links img{
+        width: 50px;
+    }
+}
+
+
