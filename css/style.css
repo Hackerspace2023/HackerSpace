@@ -26,6 +26,7 @@
 
 body{
     background-color: var(--black);
+    overflow-x: hidden;
 }
 main{
     background-color: var(--black);
