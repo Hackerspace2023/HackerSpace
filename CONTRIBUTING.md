@@ -1,13 +1,14 @@
-# Contributing to Course Manager
+# Contributing to HackerSpace
 
 **Code of Conduct:**
 - Follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 **How to Contribute:**
+- Star ⭐ the repository (Optional).
 1. Fork the repository.
 2. Clone your fork to your local machine.
 3. Create a new branch for your contribution.
-4. Make changes, commit them, and push to your fork.
+4. Make changes, commit them, and push them to your fork.
 5. Create a pull request to the main repository's `main` branch.
 6. Follow our [Contribution Guidelines](CONTRIBUTING.md).
 
