@@ -12,7 +12,7 @@ Welcome to the Hackerspace Community Open Source Project!
 
 <img src="https://github.com/Hackerspace2023/HackerSpace/blob/main/public/hackerspace.jpg" width=250 height=250>
 
-<h3>Join official <a href="https://discord.gg/Dng36Uh8m8">Discord Channel</a> for discussion</h3>
+<h3>Join official <a href="https://discord.gg/6mGFdkWxux">Discord Channel</a> for discussion</h3>
 
 # Contributors
 ![Contributors](https://contrib.rocks/image?repo=Hackerspace2023/HackerSpace)
