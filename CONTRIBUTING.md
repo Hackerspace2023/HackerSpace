@@ -6,9 +6,9 @@
 **How to Contribute:**
 - Star ⭐ the repository (Optional).
 1. Fork the repository.
-2. Clone your fork to your local machine.
-3. Create a new branch for your contribution.
-4. Make changes, commit them, and push them to your fork.
+2. Clone your fork to your local machine. <br> ` git clone <URL> `
+3. Create a new branch for your contribution. <br> ` git checkout -b <Branch name> `
+4. Make changes, commit them, and push them to your fork. 
 5. Create a pull request to the main repository's `main` branch.
 6. Follow our [Contribution Guidelines](CONTRIBUTING.md).
 
