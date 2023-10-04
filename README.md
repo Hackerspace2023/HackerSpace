@@ -14,6 +14,12 @@ Welcome to the Hackerspace Community Open Source Project!
 
 <h3>Join official <a href="https://discord.gg/6mGFdkWxux">Discord Channel</a> for discussion</h3>
 
+<br>
+
+# Associated with
+
+![Hacktoberfest23](https://github.com/Hackerspace2023/HackerSpace/blob/main/public/hacktoberfest_logo.png)
+
 # Contributors
 ![Contributors](https://contrib.rocks/image?repo=Hackerspace2023/HackerSpace)
 
