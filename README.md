@@ -63,7 +63,7 @@ Head our to [CONTRIBUTING.md](https://github.com/Hackerspace2023/HackerSpace/blo
 <a href="https://github.com/Hackerspace2023/HackerSpace/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Hackerspace2023/HackerSpace"></a>
 
 # Contributors
-![Contributors](https://contrib.rocks/image?repo=Hackerspace2023/HackerSpace)
+![Contributors](https://contrib.rocks/image?repo=Hackerspace2023/HackerSpace&lastUpdate=1696542248)
   
 
 <h2><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" alt="High Voltage" width="40" height="40" /><font size="6">Tech Stack</font></h2>
