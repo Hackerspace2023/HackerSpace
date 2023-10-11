@@ -22,7 +22,6 @@ nav{
 /* ========= nav items ========= */
 
 .nav-items{
-    background-color: #a6a6a44b;
     padding: 10px;
     border-radius: 50px;
     display: flex;
@@ -47,10 +46,13 @@ nav{
 
 .user-button{
     display: flex;
+    font-weight: 800;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 15px;
 }
+
 
 
 /* ========= nav links ========= */
