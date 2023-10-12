@@ -70,17 +70,32 @@
 .members-gallery .members-gallery-item li{
     list-style-type: none;
     position: relative;
+    cursor: pointer;
+    /* background-color: red; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.members-gallery .members-gallery-item li .members-photo{
     width: 200px;
     height: 200px;
     background-color: #fff;
     border-radius: 50%;
-    cursor: pointer;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: start;
-    position: relative;
-    transition: all 0.2s ease;
+}
+.members-gallery .members-gallery-item li .members-name{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+
 }
 .members-gallery .members-gallery-item li:hover{
     transform: scale(1.05);
