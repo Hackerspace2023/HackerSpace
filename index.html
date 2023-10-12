@@ -107,6 +107,7 @@
         </div>
         <img src="./public/background.png" alt="" class="background" />
       </div>
+
       <!-- image gallery -->
       <div class="page photo-gallery-page">
         <div class="members-gallery">
@@ -122,6 +123,18 @@
                 class="fa-solid fa-greater-than"
               ></i>
             </div>
+
+      <img id="bgimage" src="./public/background.png" alt="" class="background" />
+    </div>
+    <!-- image gallery -->
+    <div class="page photo-gallery-page">
+      <div class="members-gallery">
+        <div class="top" data-aos="fade-up">
+          <h1>Our <b>Members</b></h1>
+          <div class="members-gallery-button-section">
+            <i id="members-gallery-right-scrolls" class="fa-solid fa-less-than"></i>
+            <i id="members-gallery-left-scrolls" class="fa-solid fa-greater-than"></i>
+
           </div>
           <ul class="members-gallery-item snaps-inline" data-aos="fade-up">
             
@@ -188,7 +201,19 @@
           <div class="photo-gallery-item snaps-inline" data-aos="fade-up"></div>
         </div>
       </div>
+
       <!-- footer section -->
+
+      <button onclick="document.body.scrollTop=0;
+      document.documentElement.scrollTop=0;
+      event.preventDefault()" 
+      class="back-to-top"><span>
+        <img class="top-btn" src="./public/Backtotop.png" alt="">
+          </span>
+      </button>
+    </div>
+    <!-- footer section -->
+
 
       <footer class="footer" data-aos="fade-in">
         <h1>Code by <b>Hackerspace</b></h1>
