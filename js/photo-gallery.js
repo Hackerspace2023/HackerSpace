@@ -51,5 +51,3 @@ right.addEventListener("click", ()=>{
   console.log(j);
   
 })
-
-

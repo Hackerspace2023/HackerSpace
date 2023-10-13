@@ -53,7 +53,6 @@
             <button class="button">Join Us</button>
           </a>
         </div>
-
         <!-- Toggle -->
         <button data-time="night" id="button-wrapper">
           <span id="button" onclick="toggleButton()"></span>
@@ -111,73 +110,18 @@
         </div>
         <img src="./public/background.png" alt="" class="background" />
       </div>
-      <!-- image gallery -->
-      <div class="page photo-gallery-page">
-        <div class="members-gallery">
-          <div class="top" data-aos="fade-up">
-            <h1>Our <b>Members</b></h1>
-            <div class="members-gallery-button-section">
-              <i
-                id="members-gallery-right-scrolls"
-                class="fa-solid fa-less-than"
-              ></i>
-              <i
-                id="members-gallery-left-scrolls"
-                class="fa-solid fa-greater-than"
-              ></i>
-            </div>
-          </div>
-          <ul class="members-gallery-item snaps-inline" data-aos="fade-up">
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1944&q=80"
-                alt="${item.artist.name}"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
-            <li>
-              <img
-                src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
+      
+    <!-- image gallery -->
+    <div class="page photo-gallery-page">
+      <div class="members-gallery">
+        <div class="top" data-aos="fade-up">
+          <h1>Our <b>Members</b></h1>
+          <div class="members-gallery-button-section">
+            <i id="members-gallery-right-scrolls" class="fa-solid fa-less-than"></i>
+            <i id="members-gallery-left-scrolls" class="fa-solid fa-greater-than"></i>
 
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1530423470967-45b90dca3a4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxhZHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bGFkeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
-            <li>
-              <img
-                src="https://images.unsplash.com/photo-1537511446984-935f663eb1f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt="${item.artist.name}"
-              />
-            </li>
-          </ul>
+          </div>
+          <ul class="members-gallery-item snaps-inline" data-aos="fade-up"></ul>
         </div>
       </div>
       <!-- page two -->
@@ -242,6 +186,17 @@
       </div>
       <!-- footer section -->
 
+      <button onclick="document.body.scrollTop=0;
+      document.documentElement.scrollTop=0;
+      event.preventDefault()" 
+      class="back-to-top"><span>
+        <img class="top-btn" src="./public/Backtotop.png" alt="">
+          </span>
+      </button>
+    </div>
+    <!-- footer section -->
+
+
       <footer class="footer" data-aos="fade-in">
         <h1>Code by <b>Hackerspace</b></h1>
         <div class="footer-links">
@@ -272,7 +227,7 @@
     <script src="./js/navabar.js"></script>
     <script src="./js/photo-gallery.js"></script>
     <script src="./js/toggle-theme.js"></script>
-
+    <script src="./js/members.js" type="module"></script>
     <!-- data aos section -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

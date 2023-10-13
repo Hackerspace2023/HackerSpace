@@ -1,8 +1,4 @@
-// var theme = document.getElementById("change-theme");
-// theme.onclick = function () {
-//   document.body.classList.toggle("light-theme");
-// };
-
+const imageElement = document.getElementById("bgimage");
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => document.querySelectorAll(selector);
 
@@ -108,8 +104,10 @@ function toggleButton() {
     cat.y = y;
     cat.x = x;
     document.body.classList.toggle("light-theme");
+    imageElement.src = "./public/background.png"; 
   } else {
     document.body.classList.toggle("light-theme");
+    imageElement.src = "./public/lightbg.png"; 
   }
 }
 
