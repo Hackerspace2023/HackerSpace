@@ -53,9 +53,12 @@
             <button class="button">Join Us</button>
           </a>
         </div>
-        <div class="theme-toggle">
-          <button id="change-theme">Toggle theme</button>
-        </div>
+        <!-- Toggle -->
+        <button data-time="night" id="button-wrapper">
+          <span id="button" onclick="toggleButton()"></span>
+          <canvas id="stars"></canvas>
+        </button>
+        <!-- Toggle End -->
 
         <div class="nav-links">
           <a
@@ -107,6 +110,7 @@
         </div>
         <img src="./public/background.png" alt="" class="background" />
       </div>
+      
     <!-- image gallery -->
     <div class="page photo-gallery-page">
       <div class="members-gallery">
@@ -117,9 +121,7 @@
             <i id="members-gallery-left-scrolls" class="fa-solid fa-greater-than"></i>
 
           </div>
-          <ul class="members-gallery-item snaps-inline" data-aos="fade-up">
-            
-          </ul>
+          <ul class="members-gallery-item snaps-inline" data-aos="fade-up"></ul>
         </div>
       </div>
       <!-- page two -->
@@ -182,7 +184,6 @@
           <div class="photo-gallery-item snaps-inline" data-aos="fade-up"></div>
         </div>
       </div>
-
       <!-- footer section -->
 
       <button onclick="document.body.scrollTop=0;

@@ -2,7 +2,7 @@ const bars = document.querySelector(".nav-buttons");
 const menu = document.querySelector(".fa-bars");
 const close = document.querySelector(".fa-close");
 const nav = document.querySelector(".nav");
-const navTitle= document.querySelector(".navTitle");
+const navTitle = document.querySelector(".navTitle");
 var hide = true;
 bars.addEventListener("click", () => {
   if (hide) {
