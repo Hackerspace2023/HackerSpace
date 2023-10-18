@@ -30,6 +30,51 @@ Our primary focus? Providing an inviting gateway for beginners itching to contri
 2. [Connect](#connect)
 
 <div align="center">
+
+## Installation
+
+### 1. Star
+Click the "Star" button at the top right of the repository page on GitHub to show your appreciation for the project.
+
+### 2. Fork the repository:
+Click the "Fork" button at the top right of the repository page on GitHub. This will create a copy of the repository in your own GitHub account.
+
+### 3. Clone the forked repository to your local machine using the following command:
+```bash
+git clone https://github.com/Hackerspace2023/HackerSpace.git
+```
+> Replace your-username with your GitHub username.
+
+### 4. Create a branch
+Make a meaningful name for your new branch, and then create and switch to it using this command:
+```
+git checkout -b new-branch-name
+```
+### 5. Make Changes
+Make the necessary changes or customizations to the code as needed.
+
+After making your changes, you need to stage the changes for commit using the git add command. To stage all changes, use:
+```
+git add .
+```
+Commit your staged changes with a descriptive commit message that explains the purpose of your changes. Use the git commit command:
+```
+git commit -m "Your descriptive commit message here"
+```
+
+Push Your Changes:
+```
+git push origin your-branch-name
+```
+
+Now sumbit the Pull request
+
+### To open it in your local computer. <br>
+`clone the repo`:
+```
+ git clone 'https://github.com/Hackerspace2023/HackerSpace.git'
+```
+and then Open the `index.html` file in your favorite web browser 
   
 # Contributing
   
