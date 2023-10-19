@@ -9,6 +9,7 @@
       type="image/x-icon"
     />
     <title>Hackerspace</title>
+
     <!-- Css Links -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
@@ -193,28 +194,28 @@
       </div>
     </main>
 
-    <button
-      onclick="document.body.scrollTop=0;
-      document.documentElement.scrollTop=0;
-      event.preventDefault()"
-      class="back-to-top"
-    >
-      <span>
-        <img class="top-btn" src="./public/Backtotop.png" alt="" />
-      </span>
+    <button class="back-to-top hidden-top-btn">
+      <i class="fa-solid fa-arrow-up fa-xl"></i>
     </button>
+
+    <script src="./js/scroll-to-top.js" defer></script>
 
     <!-- footer section -->
     <footer class="footer" data-aos="fade-in">
       <div class="club-div">
         <div class="club-card">
           <img
-            src="/assets/hackerspace-logo-bg.png"
+            src="./assets/hackerspace-logo-bg.png"
             alt="hackerspace-logo"
             class="logo club-logo"
+            draggable="false"
           />
-          <!-- x -->
-          <img src="./assets/msit.jpg" alt="msit-logo" class="logo" />
+          <img
+            src="./assets/msit.jpg"
+            alt="msit-logo"
+            class="logo"
+            draggable="false"
+          />
         </div>
         <div class="club-info">
           <h1 id="club-name">Hackerspace</h1>
