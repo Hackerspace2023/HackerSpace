@@ -1,89 +1,110 @@
 /* ====================== footer section ====================== */
 
-.footer{
-    background-color: #3231308a;
-    /* max-width: 1300px; */
-    width: 100vw;
-    /* margin-left: auto; */
-    /* margin-right: auto; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
-    margin-top: 50px;
+.footer {
+  background-color: #3231308a;
+  /* background-color: cornflowerblue; */
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
 }
-.footer h1{
-    color: var(--gray);
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 30px;
-    font-weight: 500;
+
+.club-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 40%;
+  align-content: center;
 }
-.footer h1 b{
-    color: var(--orange);
+
+.club-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 0.6rem; */
+  font-size: 25pt;
 }
-.footer .footer-links{
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    position: relative;
+
+.club-logo {
+  margin-right: -20px;
+  /* z-index: 4; */
 }
-.footer .footer-links::after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -80px;
-    height: 2px;
-    width: 50px;
-    background-color: var(--gray);
+
+.footer div .logo {
+  width: 6rem;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
 }
-.footer .footer-links::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -80px;
-    height: 2px;
-    width: 50px;
-    background-color: var(--gray);
+
+.club-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.footer .footer-links i{
-    font-size: 30px;
-    color: var(--gray);
-    cursor: pointer;
-    transition: all 0.1s ease;
+
+#club-name {
+  font-size: 23pt;
+  text-transform: uppercase;
 }
-.footer .footer-links i:hover{
-    color: var(--white);
-    transform: scale(1.1);
+
+.social-links {
+  /* background-color: aqua; */
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-.footer p{
-    color: var(--gray);
-    /* letter-spacing: 3px; */
-    font-weight: 200;
-    text-align: center;
+
+.footer-links {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* width: max-content; */
+  width: 100%;
+  /* justify-items: center; */
+  /* gap: 0.5rem; */
 }
-.footer p a{
-    text-decoration: underline;
-    color: var(--orange);
-    font-weight: 400;
+
+.footer-links > a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: aliceblue;
+  font-size: 15pt;
+  width: 50%;
+  margin-bottom: 0.6rem;
+  margin-top: 0.6rem;
 }
+
 /* ====================== footer section responsive ====================== */
 
-@media only screen and (max-width: 400px)
-{
-    .footer h1{
-        font-size: 20px;
-    }
-    .footer .footer-links::after{
-        width: 20px;
-        left: -30px;
-    }
-    .footer .footer-links::before{
-        width: 20px;
-        right: -30px;
-    }
+@media only screen and (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .club-div,
+  .social-links {
+    width: 90%;
+  }
+
+  .footer-links {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links > a {
+    width: 50%;
+    margin-top: 0;
+    justify-content: center;
+  }
 }
