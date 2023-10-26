@@ -36,38 +36,60 @@ Our primary focus? Providing an inviting gateway for beginners itching to contri
 ### 1. Star
 Click the "Star" button at the top right of the repository page on GitHub to show your appreciation for the project.
 
+
+![Star the repo](<assets/Screenshot (150).png>)
+
+
 ### 2. Fork the repository:
 Click the "Fork" button at the top right of the repository page on GitHub. This will create a copy of the repository in your own GitHub account.
+![Fork the repo](<assets/Screenshot (151).png>)
+![Create fork](<assets/Screenshot (152).png>)
 
-### 3. Clone the forked repository to your local machine using the following command:
-```bash
-git clone https://github.com/Hackerspace2023/HackerSpace.git
+
+### 3. Clone your own forked repository to your local machine (Go to code option and click on copy link):
+
+![Copy button](<assets/Screenshot (155).png>)
+
+### 3.1 After clonning open terminal on your machine and use the following command to clome the repository:
 ```
-> Replace your-username with your GitHub username.
+git clone (the link you copied)
+```
+![Clonning in local machine ](<assets/Screenshot (158).png>)
+
 
 ### 4. Create a branch
 Make a meaningful name for your new branch, and then create and switch to it using this command:
 ```
-git checkout -b new-branch-name
+git checkout -b (replace with the name of branch)
 ```
+you can see the branch name changes from master to patch-1 in this case
+![Change branch ](<assets/Screenshot (161).png>)
+
 ### 5. Make Changes
 Make the necessary changes or customizations to the code as needed.
 
-After making your changes, you need to stage the changes for commit using the git add command. To stage all changes, use:
+After making your changes, you need to stage the changes for committing them by using the "git add" command. To stage all changes, use:
 ```
 git add .
 ```
+![Staging changes](<assets/Screenshot (162).png>)
+
+
 Commit your staged changes with a descriptive commit message that explains the purpose of your changes. Use the git commit command:
 ```
 git commit -m "Your descriptive commit message here"
 ```
+![Commiting changes](<assets/Screenshot (163).png>)
 
-Push Your Changes:
+Push Your Changes to the desired branch:
 ```
-git push origin your-branch-name
+git push origin (replace with your-branch-name)
 ```
+![Pushing changes](<assets/Screenshot (165).png>)
 
-Now sumbit the Pull request
+Now sumbit the Pull request to the original repo.
+
+![Create pull request](<assets/Screenshot (166).png>)
 
 ### To open it in your local computer. <br>
 `clone the repo`:
