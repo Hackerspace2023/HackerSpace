@@ -89,6 +89,8 @@ git push origin (replace with your-branch-name)
 
 Now sumbit the Pull request to the original repo.
 
+![Create pull request](<assets/Screenshot (166).png>)
+
 ### To open it in your local computer. <br>
 `clone the repo`:
 ```
