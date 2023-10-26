@@ -87,7 +87,7 @@ git push origin (replace with your-branch-name)
 ```
 ![Pushing changes](<assets/Screenshot (165).png>)
 
-Now sumbit the Pull request
+Now sumbit the Pull request to the original repo.
 
 ### To open it in your local computer. <br>
 `clone the repo`:
