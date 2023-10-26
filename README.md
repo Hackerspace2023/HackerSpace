@@ -63,7 +63,7 @@ Make a meaningful name for your new branch, and then create and switch to it usi
 git checkout -b (replace with the name of branch)
 ```
 you can see the branch name changes from master to patch-1 in this case
-![Change branch](<assets/Screenshot (159).png>) 
+![Change branch ](<assets/Screenshot (161).png>)
 
 ### 5. Make Changes
 Make the necessary changes or customizations to the code as needed.
@@ -72,15 +72,20 @@ After making your changes, you need to stage the changes for committing them by 
 ```
 git add .
 ```
+![Staging changes](<assets/Screenshot (162).png>)
+
+
 Commit your staged changes with a descriptive commit message that explains the purpose of your changes. Use the git commit command:
 ```
 git commit -m "Your descriptive commit message here"
 ```
+![Commiting changes](<assets/Screenshot (163).png>)
 
 Push Your Changes to the desired branch:
 ```
-git push origin your-branch-name
+git push origin (replace with your-branch-name)
 ```
+![Pushing changes](<assets/Screenshot (165).png>)
 
 Now sumbit the Pull request
 
